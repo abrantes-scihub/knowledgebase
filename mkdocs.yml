@@ -1,0 +1,14 @@
+site_name: Protocols
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+
+nav:
+  - Home: index.md
+  - Protocols:
+    - Git and GitHub: protocols/git-github.md
+    - VS Code: protocols/vs-code.md
