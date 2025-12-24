@@ -1,21 +1,10 @@
-site_name: My Knowledge Base
-site_description: Personal library of technical protocols and learning paths.
-theme:
-  name: material # Recomendo o tema 'material' para uma aparência profissional
+# Welcome to my Knowledge Base 📚
 
-nav:
-  - Home: index.md
-  - Protocols:
-      - Git & GitHub: protocols/git-github.md
-  - About: about.md
+This site contains my personal collection of protocols and technical guides.
 
-plugins:
-  - search
+## Available Protocols
+* **Git & GitHub**: Best practices for version control.
+* **VS Code**: Essential extensions and shortcuts.
 
-markdown_extensions:
-  - tables
-  - admonition
-  - pymdownx.highlight:
-      anchor_linenums: true
-  - pymdownx.inlinehilite
-  - pymdownx.snippets
+---
+*Created with MkDocs Material.*
