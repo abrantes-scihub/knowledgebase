@@ -1,11 +1,21 @@
 site_name: Protocols
 theme:
   name: material
-  language: en
-  features:
-    - navigation.tabs
-    - search.suggest
-    - search.highlight
+  palette: 
+    # Esquema para quando o Modo Claro estiver ativo
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7 
+        name: Switch to dark mode
+    # Esquema para quando o Modo Escuro estiver ativo
+    - scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
 
 nav:
   - Home: index.md
