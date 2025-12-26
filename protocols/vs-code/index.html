@@ -71,6 +71,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#visual-studio-code-optimization-and-standards" class="md-skip">
+          Skip to content
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -335,6 +340,26 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    VS Code
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         
@@ -352,6 +377,69 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technical-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-extensions-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Extensions Protocol
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editor-configuration-settingsjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editor Configuration (settings.json)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -382,6 +470,60 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#technical-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Environment Setup
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#core-extensions-protocol" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Extensions Protocol
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#editor-configuration-settingsjson" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editor Configuration (settings.json)
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -398,9 +540,74 @@
 
 
 
-  <h1>VS Code</h1>
-
-
+<h1 id="visual-studio-code-optimization-and-standards">Visual Studio Code: Optimization and Standards</h1>
+<p>This guide outlines the configuration protocols for Visual Studio Code to ensure a standardized development environment across different Unix-like and Windows platforms.</p>
+<hr />
+<h2 id="technical-overview">Technical Overview</h2>
+<p>Visual Studio Code (VS Code) serves as the primary integrated development environment (IDE) for this project, utilizing a modular architecture based on extensions and workspace-specific configurations.</p>
+<hr />
+<h2 id="environment-setup">Environment Setup</h2>
+<p>Select your operating system to view specific installation and path configuration protocols:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Windows</label><label for="__tabbed_1_2">macOS</label><label for="__tabbed_1_3">Linux</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<ol>
+<li>Download the System Installer from the <a href="https://code.visualstudio.com/">official VS Code site</a>.</li>
+<li>During installation, ensure the following options are enabled:<ul>
+<li><strong>Add to PATH</strong> (requires shell restart).</li>
+<li><strong>Register Code as an editor for supported file types</strong>.</li>
+</ul>
+</li>
+<li>Verify via terminal:
+    <div class="highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">code</span> <span class="p">-</span><span class="n">-version</span>
+</span></code></pre></div></li>
+</ol>
+</div>
+<div class="tabbed-block">
+<ol>
+<li>Download the <code>.zip</code> archive for Apple Silicon or Intel.</li>
+<li>Move <code>Visual Studio Code.app</code> to the <code>/Applications</code> folder.</li>
+<li>Open the Command Palette (<code>Cmd+Shift+P</code>) and type: 
+   <code>Shell Command: Install 'code' command in PATH</code>.</li>
+</ol>
+<p>Verify via terminal:
+<div class="highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>code<span class="w"> </span>--version
+</span></code></pre></div></p>
+</div>
+<div class="tabbed-block">
+<p>For Debian/Ubuntu based systems:
+<div class="highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>software-properties-common<span class="w"> </span>apt-transport-https<span class="w"> </span>wget
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>wget<span class="w"> </span>-q<span class="w"> </span><span class="o">[</span>https://packages.microsoft.com/keys/microsoft.asc<span class="o">](</span>https://packages.microsoft.com/keys/microsoft.asc<span class="o">)</span><span class="w"> </span>-O-<span class="w"> </span><span class="p">|</span><span class="w"> </span>sudo<span class="w"> </span>apt-key<span class="w"> </span>add<span class="w"> </span>-
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span><span class="s2">&quot;deb [arch=amd64] [https://packages.microsoft.com/repos/vscode](https://packages.microsoft.com/repos/vscode) stable main&quot;</span>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>sudo<span class="w"> </span>apt<span class="w"> </span>update
+</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>code
+</span></code></pre></div></p>
+</div>
+</div>
+</div>
+<hr />
+<h2 id="core-extensions-protocol">Core Extensions Protocol</h2>
+<p>To maintain project consistency, the following extensions are considered mandatory:</p>
+<ul>
+<li><strong>Python</strong>: Comprehensive support for the language (Pylance, Debugging).</li>
+<li><strong>Material Icon Theme</strong>: Visual standardization of the file tree.</li>
+<li><strong>MkDocs Material</strong>: Support for documentation preview and syntax.</li>
+<li><strong>GitLens</strong>: Enhanced authorship traceability.</li>
+</ul>
+<hr />
+<h2 id="editor-configuration-settingsjson">Editor Configuration (settings.json)</h2>
+<p>Recommended global parameters for academic readability:</p>
+<p>```json
+{
+    "editor.fontSize": 14,
+    "editor.fontFamily": "'Fira Code', 'Consolas', monospace",
+    "editor.fontLigatures": true,
+    "editor.formatOnSave": true,
+    "editor.renderWhitespace": "boundary",
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true
+}</p>
 
 
 
@@ -450,7 +657,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": [], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
