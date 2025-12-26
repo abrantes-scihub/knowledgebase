@@ -2,25 +2,37 @@ site_name: Protocols
 theme:
   name: material
   palette: 
+<<<<<<< HEAD
+=======
+    # Esquema para quando o Modo Claro estiver ativo
+>>>>>>> 502f1cae15fed7b0b4c1cc6885bfcfa2d3d74709
     - scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7 
         name: Switch to dark mode
+<<<<<<< HEAD
+=======
+    # Esquema para quando o Modo Escuro estiver ativo
+>>>>>>> 502f1cae15fed7b0b4c1cc6885bfcfa2d3d74709
     - scheme: slate
       primary: black
       accent: indigo
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+<<<<<<< HEAD
   features:
     - content.code.copy # Funcionalidade nativa do Material que substitui o copybutton externo
+=======
+>>>>>>> 502f1cae15fed7b0b4c1cc6885bfcfa2d3d74709
 
 nav:
   - Home: index.md
   - Protocols:
     - Git and GitHub: protocols/git-github.md
+<<<<<<< HEAD
     - VS Code: protocols/vs-code.md
 
 markdown_extensions:
@@ -35,3 +47,6 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.snippets
   # pymdownx.copybutton removido para evitar o erro de módulo
+=======
+    - VS Code: protocols/vs-code.md
+>>>>>>> 502f1cae15fed7b0b4c1cc6885bfcfa2d3d74709
