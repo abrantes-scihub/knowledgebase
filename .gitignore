@@ -1,4 +1,19 @@
+# Ambiente Virtual
 .venv/
+env/
+venv/
+ENV/
+
+# Pasta de build (Saída do MkDocs)
 site/
+
+# Python
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Sistema e Editores
 .DS_Store
+Thumbs.db
+.vscode/
+.idea/
