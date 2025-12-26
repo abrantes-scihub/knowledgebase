@@ -53,6 +53,7 @@ Select your operating system to ensure the correct binaries and environment vari
 One of the most efficient ways to start working is using the **Git Bash** terminal to launch your project environment.
 
 ### Opening a Project
+
 Instead of using the Windows Explorer, navigate to your project folder and call VS Code directly:
 
 ```bash
@@ -63,13 +64,14 @@ cd ~/Documents/YourProjectFolder
 # 3. Launch VS Code in the current directory
 code .
 ```
+
 ---
 
 ### Why use `code .` in Git Bash?
 
-* **Context**: VS Code opens exactly at the root of your Git repository.
-* **Consistency**: It ensures the terminal environment inside VS Code inherits the correct Bash paths.
-* **Speed**: It is the industry-standard professional workflow for developers.
+- **Context**: VS Code opens exactly at the root of your Git repository.
+- **Consistency**: It ensures the terminal environment inside VS Code inherits the correct Bash paths.
+- **Speed**: It is the industry-standard professional workflow for developers.
 
 ---
 
@@ -93,19 +95,21 @@ git config --list
 Once the project is open in VS Code, use the integrated Git Bash terminal to execute the standard development cycle:
 
 1. **Verification**: Check the current state of your files.
-    ```bash
-    git status
-    ```
+
+   ```bash
+   git status
+   ```
 
 2. **Staging**: Group the changes you want to include in the next record.
-    ```bash
-    git add .
-    ```
+
+   ```bash
+   git add .
+   ```
 
 3. **Commitment**: Save the snapshot with a clear, descriptive message.
-    ```bash
-    git commit -m "type: descriptive message in present tense"
-    ```
+   ```bash
+   git commit -m "type: descriptive message in present tense"
+   ```
 
 !!! tip "Commit Format"
-    Use the pattern `type: description` (e.g., `feat: add login page` or `fix: resolve overflow issue`). This keeps the history readable for any project.
+Use the pattern `type: description` (e.g., `feat: add login page` or `fix: resolve overflow issue`). This keeps the history readable for any project.

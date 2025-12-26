@@ -29,6 +29,3 @@ To maintain project consistency, all contributors must follow these core princip
 
 !!! info "Note on Updates"
     This documentation is automatically updated via GitHub Actions. Always ensure you are viewing the latest version.
-
----
-*Last updated: December 2025*

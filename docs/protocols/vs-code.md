@@ -5,6 +5,7 @@ This guide outlines the configuration protocols for Visual Studio Code to ensure
 ---
 
 ## Technical Overview
+
 Visual Studio Code (VS Code) serves as the primary integrated development environment (IDE) for this project, utilizing a modular architecture based on extensions and workspace-specific configurations.
 
 ---
@@ -28,9 +29,9 @@ Select your operating system to view specific installation and path configuratio
 
     1. Download the `.zip` archive for Apple Silicon or Intel.
     2. Move `Visual Studio Code.app` to the `/Applications` folder.
-    3. Open the Command Palette (`Cmd+Shift+P`) and type: 
+    3. Open the Command Palette (`Cmd+Shift+P`) and type:
        `Shell Command: Install 'code' command in PATH`.
-    
+
     Verify via terminal:
     ```bash
     code --version
@@ -51,25 +52,28 @@ Select your operating system to view specific installation and path configuratio
 ---
 
 ## Core Extensions Protocol
+
 To maintain project consistency, the following extensions are considered mandatory:
 
-* **Python**: Comprehensive support for the language (Pylance, Debugging).
-* **Material Icon Theme**: Visual standardization of the file tree.
-* **MkDocs Material**: Support for documentation preview and syntax.
-* **GitLens**: Enhanced authorship traceability.
+- **Python**: Comprehensive support for the language (Pylance, Debugging).
+- **Material Icon Theme**: Visual standardization of the file tree.
+- **MkDocs Material**: Support for documentation preview and syntax.
+- **GitLens**: Enhanced authorship traceability.
 
 ---
 
 ## Editor Configuration (settings.json)
+
 Recommended global parameters for academic readability:
 
 ```json
 {
-    "editor.fontSize": 14,
-    "editor.fontFamily": "'Fira Code', 'Consolas', monospace",
-    "editor.fontLigatures": true,
-    "editor.formatOnSave": true,
-    "editor.renderWhitespace": "boundary",
-    "files.insertFinalNewline": true,
-    "files.trimTrailingWhitespace": true
+  "editor.fontSize": 14,
+  "editor.fontFamily": "'Fira Code', 'Consolas', monospace",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.renderWhitespace": "boundary",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true
 }
+```
