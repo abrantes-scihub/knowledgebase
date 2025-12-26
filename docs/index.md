@@ -1,6 +1,6 @@
-# GEE Protocols: Technical Documentation
+# Protocols: Technical Documentation
 
-Welcome to the internal protocols repository for the **GEE** project. This documentation serves as a centralized source of truth for environment setup, version control standards, and development workflows.
+Welcome to the internal protocols repository for the almost any project. This documentation serves as a centralized source of truth for environment setup, version control standards, and development workflows.
 
 ---
 

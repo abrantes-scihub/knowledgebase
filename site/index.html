@@ -27,6 +27,9 @@
     
       <link rel="stylesheet" href="assets/stylesheets/main.484c7ddc.min.css">
       
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.ab4e12ef.min.css">
+      
       
 
 
@@ -53,7 +56,14 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -62,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#welcome-to-my-knowledge-base" class="md-skip">
+        <a href="#gee-protocols-technical-documentation" class="md-skip">
           Skip to content
         </a>
       
@@ -74,7 +84,9 @@
     
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
     <a href="." title="Protocols" class="md-header__button md-logo" aria-label="Protocols" data-md-component="logo">
       
@@ -102,6 +114,32 @@
         </div>
       </div>
     </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="black" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
     
     
       <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
@@ -133,8 +171,6 @@
         </button>
       </nav>
       
-        <div class="md-search__suggest" data-md-component="search-suggest"></div>
-      
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
@@ -160,56 +196,6 @@
       
         
           
-            
-<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
-  <div class="md-grid">
-    <ul class="md-tabs__list">
-      
-        
-  
-  
-  
-    
-  
-  
-    <li class="md-tabs__item md-tabs__item--active">
-      <a href="." class="md-tabs__link">
-        
-  
-  
-    
-  
-  Home
-
-      </a>
-    </li>
-  
-
-      
-        
-  
-  
-  
-  
-    
-    
-      <li class="md-tabs__item">
-        <a href="protocols/git-github/" class="md-tabs__link">
-          
-  
-  
-  Protocols
-
-        </a>
-      </li>
-    
-  
-
-      
-    </ul>
-  </div>
-</nav>
-          
         
       
       <main class="md-main" data-md-component="main">
@@ -223,10 +209,8 @@
                     
 
 
-  
 
-
-<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="." title="Protocols" class="md-nav__button md-logo" aria-label="Protocols" data-md-component="logo">
       
@@ -306,10 +290,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#available-protocols" class="md-nav__link">
+  <a href="#quick-access" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Available Protocols
+        🛠️ Quick Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 General Guidelines
       
     </span>
   </a>
@@ -333,9 +328,6 @@
     
     
     
-    
-      
-      
     
     
     <li class="md-nav__item md-nav__item--nested">
@@ -409,7 +401,7 @@
   
   
     <li class="md-nav__item">
-      <a href="protocols/vs-code.md" class="md-nav__link">
+      <a href="protocols/vs-code/" class="md-nav__link">
         
   
   
@@ -464,10 +456,21 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#available-protocols" class="md-nav__link">
+  <a href="#quick-access" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Available Protocols
+        🛠️ Quick Access
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#general-guidelines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📌 General Guidelines
       
     </span>
   </a>
@@ -491,15 +494,52 @@
 
 
 
-<h1 id="welcome-to-my-knowledge-base">Welcome to my Knowledge Base 📚</h1>
-<p>This site contains my personal collection of protocols and technical guides.</p>
-<h2 id="available-protocols">Available Protocols</h2>
-<ul>
-<li><strong>Git &amp; GitHub</strong>: Best practices for version control.</li>
-<li><strong>VS Code</strong>: Essential extensions and shortcuts.</li>
-</ul>
+<h1 id="gee-protocols-technical-documentation">GEE Protocols: Technical Documentation</h1>
+<p>Welcome to the internal protocols repository for the <strong>GEE</strong> project. This documentation serves as a centralized source of truth for environment setup, version control standards, and development workflows.</p>
 <hr />
-<p><em>Created with MkDocs Material.</em></p>
+<h2 id="quick-access">🛠️ Quick Access</h2>
+<p>Select a module to view the standardized procedures:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Module</th>
+<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong><a href="protocols/git-github/">Git &amp; GitHub</a></strong></td>
+<td style="text-align: left;">Version control, branching and commits.</td>
+<td style="text-align: left;">✅ Stable</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong><a href="protocols/vs-code/">VS Code</a></strong></td>
+<td style="text-align: left;">IDE configuration and extensions.</td>
+<td style="text-align: left;">✅ Updated</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Development</strong></td>
+<td style="text-align: left;">Python environment and dependency management.</td>
+<td style="text-align: left;">🚧 In Progress</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="general-guidelines">📌 General Guidelines</h2>
+<p>To maintain project consistency, all contributors must follow these core principles:</p>
+<ol>
+<li><strong>Standardization</strong>: Use the configurations defined in the <a href="protocols/vs-code/">VS Code Guide</a>.</li>
+<li><strong>Traceability</strong>: Every change must be linked to a descriptive commit.</li>
+<li><strong>Documentation</strong>: Keep protocols updated as the environment evolves.</li>
+</ol>
+<hr />
+<div class="admonition info">
+<p class="admonition-title">Note on Updates</p>
+<p>This documentation is automatically updated via GitHub Actions. Always ensure you are viewing the latest version.</p>
+</div>
+<hr />
+<p><em>Last updated: December 2025</em></p>
 
 
 
@@ -549,7 +589,7 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["navigation.tabs", "search.suggest", "search.highlight"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": ".", "features": ["content.code.copy"], "search": "assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
       <script src="assets/javascripts/bundle.79ae519e.min.js"></script>
