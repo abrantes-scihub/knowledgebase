@@ -16,11 +16,13 @@ theme:
         name: Switch to light mode
   features:
     - content.code.copy
+    - navigation.footer # Habilita o rodapé para mostrar a data
 
 nav:
   - Home: index.md
   - Protocols:
-    - Git and GitHub: protocols/git-github.md
+    - Git: protocols/git.md
+    - GitHub: protocols/github.md
     - VS Code: protocols/vs-code.md
 
 markdown_extensions:
@@ -34,3 +36,10 @@ markdown_extensions:
       line_spans: __span
   - pymdownx.inlinehilite
   - pymdownx.snippets
+
+plugins:
+  - search
+  - git-revision-date-localized:
+      enable_creation_date: true
+      type: date
+      locale: en # Ou 'pt' se preferir a data em português

@@ -10,7 +10,8 @@ Select a module to view the standardized procedures:
 
 | Module | Description | Status |
 | :--- | :--- | :--- |
-| **[Git & GitHub](protocols/git-github.md)** | Version control, branching and commits. | ✅ Stable |
+| **[Git](protocols/git.md)** | Local installation and workflow. | ✅ Stable |
+| **[GitHub](protocols/github.md)** | Remote collaboration and SSH. | ✅ Updated |
 | **[VS Code](protocols/vs-code.md)** | IDE configuration and extensions. | ✅ Updated |
 | **Development** | Python environment and dependency management. | 🚧 In Progress |
 
