@@ -42,13 +42,13 @@ To start a local development server and preview changes in real-time (usually at
 ```bash
 mkdocs serve
 ```
-**Build the static site**
+**Build the static site**<br>
 To manually generate the HTML files (stored in the site/ directory):
 
 ```bash
 mkdocs build
 ```
-**Deploy to GitHub Pages**
+**Deploy to GitHub Pages**<br>
 To publish updates directly to the gh-pages branch:
 
 ```bash
