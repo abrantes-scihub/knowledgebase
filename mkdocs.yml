@@ -16,7 +16,10 @@ theme:
         name: Switch to light mode
   features:
     - content.code.copy
-    - navigation.footer # Habilita o rodapé para mostrar a data
+    - navigation.footer # Habilita o rodapé para mostrar a data da última modificação
+
+extra_css:
+  - stylesheets/extra.css
 
 nav:
   - Home: index.md
