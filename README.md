@@ -60,3 +60,30 @@ mkdocs gh-deploy
 - **docs/**: Source files in Markdown (```.md```).
 - **mkdocs.yml**: Main configuration file (theme, navigation, and plugins).
 - **.gitignore**: Configured to exclude temporary folders like ```.venv/``` and ```site/```.
+
+
+
+=== "macOS"
+
+    1. Recommendation: Install via [Homebrew](https://brew.sh/):
+       ```bash
+       brew install git
+       ```
+    2. Alternatively, use the installer from [git-scm.com](https://git-scm.com/).
+    3. Verify in Terminal:
+       ```bash
+       git --version
+       ```
+
+=== "Linux"
+
+    1. Use the package manager for your distribution:
+       ```bash
+       # Ubuntu/Debian
+       sudo apt update
+       sudo apt install git
+       ```
+    2. Verify:
+       ```bash
+       git --version
+       ```
