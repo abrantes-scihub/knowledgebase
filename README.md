@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ```
 
 ## Usage
-**Preview the site locally**
+**Preview the site locally**<br>
 To start a local development server and preview changes in real-time (usually at http://127.0.0.1:8000):
 
 ```bash
