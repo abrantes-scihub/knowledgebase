@@ -16,18 +16,17 @@ python -m venv .venv
 ```
 
 ### 3. Activate the Virtual Environment
+**Windows** (MSYS2/Git Bash/PowerShell)
 
-=== "Windows (MSYS2/Git Bash/PowerShell)"
+```bash
+source .venv/Scripts/activate
+```
 
-    ```bash
-    source .venv/Scripts/activate
-    ```
+**Linux/macOS**
 
-=== "Linux/macOS"
-
-    ```bash
-    source .venv/bin/activate
-    ```
+```bash
+source .venv/bin/activate
+```
 
 ### 4. Install Dependencies
 With the virtual environment activated, install the required packages:
@@ -57,33 +56,6 @@ mkdocs gh-deploy
 ```
 
 ## Project Structure
-- **docs/**: Source files in Markdown (```.md```).
-- **mkdocs.yml**: Main configuration file (theme, navigation, and plugins).
-- **.gitignore**: Configured to exclude temporary folders like ```.venv/``` and ```site/```.
-
-
-
-=== "macOS"
-
-    1. Recommendation: Install via [Homebrew](https://brew.sh/):
-       ```bash
-       brew install git
-       ```
-    2. Alternatively, use the installer from [git-scm.com](https://git-scm.com/).
-    3. Verify in Terminal:
-       ```bash
-       git --version
-       ```
-
-=== "Linux"
-
-    1. Use the package manager for your distribution:
-       ```bash
-       # Ubuntu/Debian
-       sudo apt update
-       sudo apt install git
-       ```
-    2. Verify:
-       ```bash
-       git --version
-       ```
+- **docs/**: source files in Markdown (```.md```).
+- **mkdocs.yml**: main configuration file (theme, navigation, and plugins).
+- **.gitignore**: configured to exclude temporary folders like ```.venv/``` and ```site/```.
