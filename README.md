@@ -19,15 +19,15 @@ python -m venv .venv
 
 === "Windows (MSYS2/Git Bash/PowerShell)"
 
-   ```bash
-   source .venv/Scripts/activate
-   ```
+    ```bash
+    source .venv/Scripts/activate
+    ```
 
 === "Linux/macOS"
 
-   ```bash
-   source .venv/bin/activate
-   ```
+    ```bash
+    source .venv/bin/activate
+    ```
 
 ### 4. Install Dependencies
 With the virtual environment activated, install the required packages:
