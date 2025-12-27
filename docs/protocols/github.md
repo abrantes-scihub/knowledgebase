@@ -61,7 +61,7 @@ Select the appropriate tab for your operating system environment:
 
 ---
 
-## Phase 1: Local Initialization
+## Local Initialization
 
 The primary goal is to initialize a tracking environment for a specific directory.
 
