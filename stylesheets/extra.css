@@ -1,0 +1,16 @@
+:root {
+  /* Tamanho da fonte principal (texto dos parágrafos) */
+  --md-typeset-font-size: 0.9rem;
+
+  /* Tamanho da fonte para blocos de código */
+  --md-code-font-size: 0.85rem;
+}
+
+/* Se quiser alterar especificamente o tamanho dos títulos (H1, H2, etc) */
+h1 {
+  font-size: 2.0em !important;
+}
+
+h2 {
+  font-size: 1.6em !important;
+}
